@@ -1,0 +1,34 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #search-bar, #discover-btn {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #verse-display {
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+  
+  /* Add styles for dark mode here (e.g. background-color, color) */
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode #bible-content {
+    background-color: #444;
+    color: #fff;
+    border-color: #666;
+  }
+  
+  .dark-mode input[type="text"],
+  .dark-mode button {
+    background-color: #555;
+    color: #fff;
+    border-color: #666;
+  }
