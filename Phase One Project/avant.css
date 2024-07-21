@@ -1,34 +1,89 @@
+.my-selector{
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container Style */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  #search-bar, #discover-btn {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Style */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Verse Display Styles */
+
+#random-verse,
+
+#all-verses div {
+    background: #f4f4f4;
+    margin: 10px 0;
     padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  #verse-display {
-    font-size: 16px;
-    white-space: pre-wrap;
-  }
-  
-  /* Add styles for dark mode here (e.g. background-color, color) */
-  .dark-mode {
-    background-color: #333;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#random-verse {
+    margin-bottom: 20px;
+}
+
+/* Button Style */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
     color: #fff;
-  }
-  
-  .dark-mode #bible-content {
-    background-color: #444;
-    color: #fff;
-    border-color: #666;
-  }
-  
-  .dark-mode input[type="text"],
-  .dark-mode button {
-    background-color: #555;
-    color: #fff;
-    border-color: #666;
-  }
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Modal Style */
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #ffdddd;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    color: #721c24;
+    z-index: 1000;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+/* Activated Heart Style */
+.activated-heart {
+    color: red;
+}
